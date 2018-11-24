@@ -22,7 +22,8 @@ import frc.robot.AutonModes;
  */
 public class Robot extends IterativeRobot {
   private static final String kDefaultAuto = "Default";
-  private static final String kCustomAuto = "My Auto";
+  private static final String kCustomAuto1 = "My Auto";
+  private static final String kCustomAuto2 = "Self Destruct";
   private String m_autoSelected;
   private final SendableChooser<String> m_chooser = new SendableChooser<>();
 
@@ -32,8 +33,9 @@ public class Robot extends IterativeRobot {
    */
   @Override
   public void robotInit() {
-    m_chooser.addDefault("Default Auto", kDefaultAuto);
-    m_chooser.addObject("My Auto", kCustomAuto);
+    m_chooser.addDefault("Default Auto - Ram the Wall", kDefaultAuto);
+    m_chooser.addObject("My Auto - Smash the Line", kCustomAuto1);
+    m_chooser.addObject("Self Desruct", kCustomAuto2);
     SmartDashboard.putData("Auto choices", m_chooser);
   }
 
@@ -74,9 +76,13 @@ public class Robot extends IterativeRobot {
   @Override
   public void autonomousPeriodic() {
     switch (m_autoSelected) {
-      case kCustomAuto:
+      case kCustomAuto1:
         // Put custom auto code here
         AutonModes.GoLeftRunOverAllRobots();
+        break;
+      case kCustomAuto2:
+        // Put code to self descruct the robot in here
+        AutonModes.SelfDestruct();
         break;
       case kDefaultAuto:
       default:
