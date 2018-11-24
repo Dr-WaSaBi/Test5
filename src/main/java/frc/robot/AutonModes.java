@@ -57,4 +57,10 @@ public class AutonModes extends Command {
      * fun.
      */
   }
+  public static void SelfDestruct() {
+    /**
+     * Robot will move to center of field and detanate internal charages
+     */
+
+  }
 }
