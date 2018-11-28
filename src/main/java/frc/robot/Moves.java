@@ -52,4 +52,13 @@ public class Moves extends InstantCommand {
 
   }
 
-}
+  public static void hoverAdoveField(float targethight){
+    /**
+     * Lift robot off of the field
+     * 
+     * @param float targethight
+     * 
+     */
+  }
+
+} // End of Class
