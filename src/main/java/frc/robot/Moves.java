@@ -10,11 +10,13 @@ package frc.robot;
 import edu.wpi.first.wpilibj.command.InstantCommand;
 
 /**
- * Add your docs here.
+ * A class for making the robot move.
  */
 public class Moves extends InstantCommand {
   /**
-   * Add your docs here.
+   * predefinded moves for the robot
+   * @author Russell Riker
+   * @version 1.1
    */
   public Moves() {
     super();
@@ -32,6 +34,9 @@ public class Moves extends InstantCommand {
      * Move the robot forward x amount of distance @ x speed
      * idea: could it return a true if there were encoders that could say if it was
      * a successfule move?
+     * @param float distance 
+     * @param int speed
+     * 
      */
   }
   public static void turnrobot(int degreeofturn){
