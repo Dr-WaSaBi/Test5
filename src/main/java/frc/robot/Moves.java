@@ -40,5 +40,11 @@ public class Moves extends InstantCommand {
      * -x for left, +x for right. Max of 180
      */
   }
+  public static void rollbackward(float distance, int speed){
+    /***
+     * Move the robot backwards x amount of distance @ x speed
+     */
+
+  }
 
 }
