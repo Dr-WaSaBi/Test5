@@ -27,4 +27,18 @@ public class Moves extends InstantCommand {
   protected void initialize() {
   }
 
+  public static void rollforward(float distance, int speed){
+    /***
+     * Move the robot forward x amount of distance @ x speed
+     * idea: could it return a true if there were encoders that could say if it was
+     * a successfule move?
+     */
+  }
+  public static void turnrobot(int degreeofturn){
+    /***
+     * Takes a positive or negtive number for the number of degrees to turn. 
+     * -x for left, +x for right. Max of 180
+     */
+  }
+
 }

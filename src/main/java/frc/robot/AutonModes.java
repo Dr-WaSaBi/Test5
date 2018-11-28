@@ -8,6 +8,7 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj.command.Command;
+import frc.robot.Moves;
 
 public class AutonModes extends Command {
   public AutonModes() {
@@ -44,9 +45,12 @@ public class AutonModes extends Command {
   
   public static void GoLeftRunOverAllRobots() {
     /***
-     * This will make the robot in auton mode make a sharp left and run
-     * over all alliance partners robots.  Hoora!
+     * This will make the robot in auton mode make a sharp left and run over all
+     * alliance partners robots. Hoora!
      */
+
+    Moves.turnrobot(-90);
+    Moves.rollforward(45, 100);
   }
 
   public static void GoFullBoarBlowThruFarWall() {
@@ -56,10 +60,15 @@ public class AutonModes extends Command {
      * as many driver stations off bench.  So much 
      * fun.
      */
+    Moves.rollforward(100,100); //move at max speed forward, 
   }
-  public static void SelfDestruct() {
+
+  
+  public static void SelfDestruct(int timer) {
     /**
      * Robot will move to center of field and detanate internal charages
+     * Takes an intager as to how long to wait in seconds before blowing 
+     * the C4 you've installed onboard your robot.
      */
 
   }
