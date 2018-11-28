@@ -61,4 +61,13 @@ public class Moves extends InstantCommand {
      */
   }
 
+  public static boolean sumergeRobot(float targetdepth){
+    /**
+     * Sumerge the robot to a depth
+     * If robot makes it to the targetdepth
+     * return true
+     */
+    return(true)
+  }
+
 } // End of Class
