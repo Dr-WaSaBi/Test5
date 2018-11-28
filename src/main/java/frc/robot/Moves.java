@@ -67,7 +67,7 @@ public class Moves extends InstantCommand {
      * If robot makes it to the targetdepth
      * return true
      */
-    return(true)
+    return(true);
   }
 
 } // End of Class
